@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: ntloi95/gatsby-tips
 
 media_folder: static/assets
 
