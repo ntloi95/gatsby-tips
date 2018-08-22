@@ -1,6 +1,6 @@
 ---
 path: ja.test
 date: '2018-08-15'
-title: Test
+title: Test Japanese
 ---
 This is Japanese
