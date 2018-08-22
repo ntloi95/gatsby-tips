@@ -1,6 +1,6 @@
 ---
-path: blog/test
+path: test
 date: '2018-08-15'
 title: Test
 ---
-Test CMS
+This is English

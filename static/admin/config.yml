@@ -1,15 +1,14 @@
 backend:
-    name: test-repo
+  name: github
 
 media_folder: static/assets
-public_folder: assets
 
 collections:
-    - name: blog
-      label: Blog
-      folder: src/pages
-      create: true
-      fields:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
