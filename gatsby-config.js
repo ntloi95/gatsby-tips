@@ -27,7 +27,7 @@ module.exports = {
       resolve: 'gatsby-plugin-i18n',
       options: {
         langKeyDefault: languages.defaultLangKey,
-        useLangKeyLayout: true,
+        useLangKeyLayout: false,
         markdownRemark: {
           postPage: 'src/templates/blogTemplate.js',
           query: `

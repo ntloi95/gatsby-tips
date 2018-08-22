@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
         >
             <div>
                 <Helmet
-                    title="Gatsby Default Starter"
+                    title={data.site.siteMetadata.title}
                     meta={[
                         { name: 'description', content: 'Sample' },
                         { name: 'keywords', content: 'sample, something' },
@@ -56,7 +56,8 @@ export const pageQuery = graphql`
         languages {
           defaultLangKey
           langs
-        }      
+        }
+        title      
       }
     }
   }
