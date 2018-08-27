@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import SelectLanguage from './SelectLanguage';
+import SelectLanguage from './selectLanguage';
 
 const Header = (props) => (
     <div

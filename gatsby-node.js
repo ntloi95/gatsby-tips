@@ -1,4 +1,3 @@
-const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const languages = require(`./src/data/languages`);
 
@@ -14,7 +13,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     if (!languages.langs.includes(langKey)) {
       langKey = languages.defaultLangKey
     }
-
+    
     createNodeField({
       node,
       name: `slug`,
