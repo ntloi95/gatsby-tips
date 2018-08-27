@@ -10,7 +10,8 @@ collections:
     label: Post
     folder: /src/pages/post
     create: true
-    slug: "{{path}}/.{{language}}"
+    slug: "{{path}}"
+    extension: "{{language}}.md"
     fields:
       - { name: path, label: Path }
       - { name: language, label: Language}
