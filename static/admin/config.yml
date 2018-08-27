@@ -10,7 +10,8 @@ collections:
     label: Post
     folder: /src/pages/post
     create: true
-    slug: "{{url}}.{{language}}"
+    slug:
+      slug: "{{url}}.{{language}}"
       encoding: "unicode"
       clean_accents: false
     fields:
