@@ -10,11 +10,11 @@ collections:
     label: Post
     folder: /src/pages/post
     create: true
-    slug: "{{url}}"
-    extension: "{{language}}.md"
-    format: "frontmatter"
+    slug: "{{url}}.{{language}}"
+      encoding: "unicode"
+      clean_accents: false
     fields:
-      - { name: url, label: Path }
+      - { name: url, label: URL }
       - { name: language, label: Language}
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
