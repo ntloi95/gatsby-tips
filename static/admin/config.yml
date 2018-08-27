@@ -1,16 +1,20 @@
 backend:
   name: github
+  branch: master
   repo: ntloi95/gatsby-tips
 
 media_folder: static/assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: post
+    label: Post
+    folder: src/pages/post
     create: true
+    slug: "{{fileName}.{language}}"
     fields:
+      - { name: fileName, label: File name}
       - { name: path, label: Path }
+      - { name: language, label: Language}
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
