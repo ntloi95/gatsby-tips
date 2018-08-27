@@ -11,7 +11,8 @@ collections:
     folder: /src/pages/post
     create: true
     slug: "{{url}}.{{language}}"
-    format: "{{language}}.md"
+    extension: "{{language}}.md"
+    format: "frontmatter"
     fields:
       - { name: url, label: URL }
       - { name: language, label: Language}
