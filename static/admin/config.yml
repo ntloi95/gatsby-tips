@@ -12,6 +12,7 @@ collections:
     create: true
     slug: "{{url}}"
     extension: "{{language}}.md"
+    format: "frontmatter"
     fields:
       - { name: url, label: Path }
       - { name: language, label: Language}
