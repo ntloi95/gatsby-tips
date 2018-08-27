@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Template({ data }) {
+export default function Template({data}) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
@@ -18,8 +18,8 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPostBySlug($path: String!) {
+    markdownRemark(fields: { slug: { eq: $path } }) {
       html
       frontmatter {
         title,

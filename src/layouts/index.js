@@ -22,10 +22,6 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
             <div>
                 <Helmet
                     title={data.site.siteMetadata.title}
-                    meta={[
-                        { name: 'description', content: 'Sample' },
-                        { name: 'keywords', content: 'sample, something' },
-                    ]}
                 />
                 <Header langs={langsMenu} />
                 <div

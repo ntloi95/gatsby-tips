@@ -6,15 +6,22 @@ module.exports = {
     languages,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    // plugin modify header page html
+    `gatsby-plugin-react-helmet`, 
+
+    // plugin transform file markdown to hmtl
     `gatsby-transformer-remark`,
+
+    // plugin scan files in project to find out all file markdown
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/blog`,
+        path: `${__dirname}/src/pages/post`,
         name: 'markdown-pages',
       },
     },
+
+    // plugin netlify to commit new file markdown to repository, create new post, admin ui
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
@@ -23,27 +30,29 @@ module.exports = {
         htmlTitle: `Content Manager`,
       },
     },
+
+    // plugin international localization
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
         langKeyDefault: languages.defaultLangKey,
         useLangKeyLayout: true,
         markdownRemark: {
-          postPage: 'src/templates/blogTemplate.js',
+          postPage: 'src/templates/post.js',
           query: `
           {
-              allMarkdownRemark {
-                  edges {
-                  node {
-                      fields {
-                      slug,
-                      langKey
-                      }
+            allMarkdownRemark {
+              edges {
+                node {
+                  fields {
+                    slug,
+                    langKey
                   }
-                  }
+                }
               }
+            }
           }
-          `,
+          `
         },
       },
     },
