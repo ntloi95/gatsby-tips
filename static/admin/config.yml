@@ -8,7 +8,7 @@ media_folder: static/assets
 collections:
   - name: post
     label: Post
-    folder: src/pages/post
+    folder: /src/pages/post
     create: true
     slug: "{{fileName}.{language}}"
     fields:
