@@ -13,7 +13,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
     const langKey = getCurrentLangKey(langs, defaultLangKey, url);
     const homeLink = `/${langKey}/`;
     const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-
+    console.log(data.site.siteMetadata);
     return (
         <IntlProvider
             locale={langKey}
@@ -23,7 +23,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
                 <Helmet
                     title={data.site.siteMetadata.title}
                 />
-                <Header langs={langsMenu} />
+                <Header langs={langsMenu} title={data.site.siteMetadata.title} />
                 <div
                     style={{
                         margin: '0 auto',
@@ -53,7 +53,7 @@ export const pageQuery = graphql`
           defaultLangKey
           langs
         }
-        title      
+        title
       }
     }
   }

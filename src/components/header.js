@@ -24,7 +24,7 @@ const Header = (props) => (
                         textDecoration: 'none',
                     }}
                 >
-                    Activity Tips
+                   {props.title}
                 </Link>
             </h1>
             <SelectLanguage langs={props.langs} />

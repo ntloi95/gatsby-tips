@@ -22,7 +22,8 @@ export const pageQuery = graphql`
         languages {
           defaultLangKey
           langs
-        }      
+        }
+        title
       }
     }
   }

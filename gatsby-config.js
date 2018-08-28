@@ -2,7 +2,7 @@ const languages = require('./src/data/languages')
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Tips Diana 4.0`,
+    title: `Activity Tips Diana 4.0`,
     languages,
   },
   plugins: [
@@ -33,12 +33,12 @@ module.exports = {
 
     // plugin international localization
     {
-      resolve: 'gatsby-plugin-i18n',
+      resolve: `gatsby-plugin-i18n`,
       options: {
         langKeyDefault: languages.defaultLangKey,
         useLangKeyLayout: true,
         markdownRemark: {
-          postPage: 'src/templates/post.js',
+          postPage: `${__dirname}/src/templates/post.js`,
           query: `
           {
             allMarkdownRemark {
