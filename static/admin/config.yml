@@ -10,11 +10,8 @@ collections:
     label: Post
     folder: /src/pages/post
     create: true
-    slug: "{{url}}"
-    extension: "vi.md"
-    format: "frontmatter"
     fields:
-      - { name: url, label: URL }
+      - { name: path, label: path }
       - { name: language, label: Language}
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
