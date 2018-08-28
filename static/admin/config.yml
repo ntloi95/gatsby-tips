@@ -3,7 +3,7 @@ backend:
   name: github
   branch: master
   repo: ntloi95/gatsby-tips
-
+`
 # Folder to upload file media: photos, assets,... 
 media_folder: static/assets
 
@@ -12,7 +12,7 @@ collections:
   # English
   - name: EnPost
     label: English Post
-    folder: /src/pages/post/en
+    folder: /src/pages/post
     create: true
     slug: "{{url}}"
     extension: "en.md"
@@ -26,7 +26,7 @@ collections:
   # Japanese
   - name: JaPost
     label: Japanese Post
-    folder: /src/pages/post/ja
+    folder: /src/pages/post
     create: true
     slug: "{{url}}"
     extension: "ja.md"
@@ -40,7 +40,7 @@ collections:
   # Portugal
   - name: PtPost
     label: Portugal Post
-    folder: /src/pages/post/pt
+    folder: /src/pages/post
     create: true
     slug: "{{url}}"
     extension: "pt.md"
@@ -54,7 +54,7 @@ collections:
   # Vietnamese
   - name: ViPost
     label: Vietnamese Post
-    folder: /src/pages/post/vi
+    folder: /src/pages/post
     create: true
     slug: "{{url}}"
     extension: "vi.md"
