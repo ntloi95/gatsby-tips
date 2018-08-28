@@ -1,23 +1,62 @@
+# Github to connect to repository
 backend:
   name: github
   branch: master
   repo: ntloi95/gatsby-tips
 
+# Folder to upload file media: photos, assets,... 
 media_folder: static/assets
 
-slug:
-  encoding: "ascii"
-  clean_accents: true
-
+# List of languages
 collections:
-  - name: post
-    label: Post
-    folder: /src/pages/post
+  # English
+  - name: EnPost
+    label: English Post
+    folder: /src/pages/post/en
     create: true
-    slug: "{{url}}.{{language}}"
+    slug: "{{url}}"
+    extension: "en.md"
     fields:
       - { name: url, label: URL }
-      - { name: language, label: Language }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+
+  # Japanese
+  - name: JaPost
+    label: Japanese Post
+    folder: /src/pages/post/ja
+    create: true
+    slug: "{{url}}"
+    extension: "ja.md"
+    fields:
+      - { name: url, label: URL }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+  
+  # Portugal
+  - name: PtPost
+    label: Portugal Post
+    folder: /src/pages/post/pt
+    create: true
+    slug: "{{url}}"
+    extension: "pt.md"
+    fields:
+      - { name: url, label: URL }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+
+  # Vietnamese
+  - name: ViPost
+    label: Vietnamese Post
+    folder: /src/pages/post/vi
+    create: true
+    slug: "{{url}}"
+    extension: "vi.md"
+    fields:
+      - { name: url, label: URL }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
