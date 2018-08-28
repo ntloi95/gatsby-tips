@@ -3,7 +3,7 @@ backend:
   name: github
   branch: master
   repo: ntloi95/gatsby-tips
-`
+
 # Folder to upload file media: photos, assets,... 
 media_folder: static/assets
 
