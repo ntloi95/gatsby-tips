@@ -1,4 +1,4 @@
-# Github to connect to repository
+# Config to connect to repository
 backend:
   name: github
   branch: master
