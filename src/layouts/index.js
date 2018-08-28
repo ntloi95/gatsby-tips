@@ -23,7 +23,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
                 <Helmet
                     title={data.site.siteMetadata.title}
                 />
-                <Header langs={langsMenu} title={data.site.siteMetadata.title} />
+                <Header langs={langsMenu} title={i18nMessages.title} />
                 <div
                     style={{
                         margin: '0 auto',

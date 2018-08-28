@@ -2,6 +2,7 @@ const languages = require('./src/data/languages')
 
 module.exports = {
   siteMetadata: {
+    // Header text of name tab in browser
     title: `Activity Tips Diana 4.0`,
     languages,
   },
@@ -11,6 +12,14 @@ module.exports = {
 
     // plugin transform file markdown to hmtl
     `gatsby-transformer-remark`,
+
+    // plugin css module
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
 
     // plugin scan files in project to find out all file markdown
     {

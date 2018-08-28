@@ -1,3 +1,4 @@
 module.exports = {
-    'selectLanguage': 'んでください'
+    'selectLanguage': 'んでください',
+    'title': '活動のヒント'
 };

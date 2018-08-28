@@ -23,8 +23,8 @@ class RedirectIndex extends React.PureComponent {
 export default RedirectIndex;
 
 export const pageQuery = graphql`
-  query IndexQuery {    
-    site{
+  query IndexQuery {  
+    site {
       siteMetadata{
         languages {
           defaultLangKey

@@ -1,3 +1,4 @@
 module.exports = {
-    'selectLanguage': 'Chọn ngôn ngữ'
+    'selectLanguage': 'Chọn ngôn ngữ của bạn',
+    'title': 'Mẹo Hoạt Động'
 };
