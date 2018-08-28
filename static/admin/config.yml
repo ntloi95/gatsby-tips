@@ -16,6 +16,7 @@ collections:
     create: true
     slug: "{{url}}"
     extension: "en.md"
+    format: "frontmatter"
     fields:
       - { name: url, label: URL }
       - { name: date, label: Date, widget: date }
@@ -29,6 +30,7 @@ collections:
     create: true
     slug: "{{url}}"
     extension: "ja.md"
+    format: "frontmatter"
     fields:
       - { name: url, label: URL }
       - { name: date, label: Date, widget: date }
@@ -42,6 +44,7 @@ collections:
     create: true
     slug: "{{url}}"
     extension: "pt.md"
+    format: "frontmatter"
     fields:
       - { name: url, label: URL }
       - { name: date, label: Date, widget: date }
@@ -55,6 +58,7 @@ collections:
     create: true
     slug: "{{url}}"
     extension: "vi.md"
+    format: "frontmatter"
     fields:
       - { name: url, label: URL }
       - { name: date, label: Date, widget: date }
