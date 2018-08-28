@@ -17,7 +17,7 @@ collections:
     slug: "{{url}}.{{language}}"
     fields:
       - { name: url, label: URL }
-      - { name: language, label: Language}
+      - { name: language, label: Language }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
