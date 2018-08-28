@@ -7,7 +7,7 @@ media_folder: static/assets
 
 slug:
   encoding: "ascii"
-  clean_accents: false
+  clean_accents: true
 
 collections:
   - name: post
