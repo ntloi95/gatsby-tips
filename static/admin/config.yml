@@ -11,8 +11,7 @@ collections:
     folder: /src/pages/post
     create: true
     fields:
-      - { name: path, label: path }
-      - { name: language, label: Language}
+      - { name: slug, label: Filename }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
