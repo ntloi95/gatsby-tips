@@ -18,7 +18,7 @@ collections:
     extension: "en.md"
     format: "frontmatter"
     fields:
-      - { name: url, label: URL }
+      - { name: url, label: URL (One post in different languages must have same url) }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
@@ -32,7 +32,7 @@ collections:
     extension: "ja.md"
     format: "frontmatter"
     fields:
-      - { name: url, label: URL }
+      - { name: url, label: URL (One post in different languages must have same url) }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
@@ -46,7 +46,7 @@ collections:
     extension: "pt.md"
     format: "frontmatter"
     fields:
-      - { name: url, label: URL }
+      - { name: url, label: URL (One post in different languages must have same url) }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
@@ -60,7 +60,7 @@ collections:
     extension: "vi.md"
     format: "frontmatter"
     fields:
-      - { name: url, label: URL }
+      - { name: url, label: URL (One post in different languages must have same url) }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
