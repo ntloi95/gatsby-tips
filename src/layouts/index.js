@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
 import { IntlProvider } from 'react-intl';
 import 'intl';
-import './index.css'
+import '../css/index.css'
 
 const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
     const url = location.pathname;
