@@ -1,8 +1,8 @@
 # Config to connect to repository
 backend:
-  name: github
+  name: bitbucket
   branch: master
-  repo: ntloi95/gatsby-tips
+  repo: misfitwearablesinc/portfolio-cms
 
 # Folder to upload file media: photos, assets,... 
 media_folder: static/assets
